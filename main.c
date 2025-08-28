@@ -1,8 +1,25 @@
 #include <stdio.h>
-int main () {
-	printf("Calculo do IMC\n");
-	printf("Altura: %f \n", 1.64);
-	printf("Peso : %f \n", 62.5);
+int main()
+{
+   float num1, num2, num3;
+   
+    printf("Digite um dos lados do triangulo: ");
+    scanf("%f", &num1);
+    
+    printf("Digite o segundo lado do triangulo: ");
+    scanf("%f", &num2);
+    
+    printf("Digite o terceiro lado do triangulo: ");
+    scanf("%f", &num3);
+    
+    if(num1 >= num2+num3)
+    {
+        printf("Nao forma um triangulo! ");
+    }
+    else
+    {
+        printf("Forma um triangulo! ");
+    }
 
-	printf("IMC: %f ",62.5 / (1.64* 1.64));
+    return 0;
 }
