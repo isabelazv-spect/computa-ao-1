@@ -2,47 +2,26 @@
 
 int main()
 {
-	int positivos = 0;
-	float num1, soma = 0, media;
+	int n, m;
+	int i = 1;
+	int j = 1;
 
-	printf("Digite um numero (-1000 para parar):\n");
-	scanf("%f", &num1);
+    printf("Digite n: ");
+    scanf("%d", &n);
 
-	if(num1 == -1000)
-	{
-		printf("Nenhum valor digitado ! ");
-		return 0;
-	}
-
-	if(num1 > 0)
-	{
-		positivos++;
-		soma += num1;
-	}
-
-
-	while(num1 != -1000)
-	{
-		scanf("%f", &num1);
-
-		if(num1 > 0)
-		{
-			positivos++;
-			soma += num1;
-
-		}
-
-	}
-
-	if(positivos > 0)
-	{
-		media = soma / positivos;
-		
-		printf("Quantidade de valores positivos: %d\n", positivos);
-		printf("Media dos positivos: %.1f\n", media);
-	}
-
-
-
+    printf("Digite m: ");
+   	scanf("%d", &m);
+   	
+   	for(i = 1; i <= n; i++)
+   	{
+   	    for(j = 1; j <=m; j++)
+   	    {
+   	        printf("%d", i * j);
+   	    }
+   	    
+   	    printf("\n");
+   	}
+   	
+   	
 	return 0;
 }
